@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+      #home{
+        background-image: url(https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #furniture{
+        border-radius: 8px;
+        background-image:  url(https://media.istockphoto.com/id/876052798/photo/shopping.jpg?s=612x612&w=0&k=20&c=eWlMqE0m8sHyOA4qFcfFVDGNWtunQusLdYPxElZrPkQ=);
+      }
+      #handbag{
+        border-radius: 8px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49QW3IOtFSh2fFLWCSGHq9GongvnreWOM9Q&usqp=CAU); 
+           }
+      #books{
+        border-radius: 8px;
+        background-image: url(https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg);
+      }
+      #tech{
+        border-radius: 8px;
+        background-image: url(https://cdn.thewirecutter.com/wp-content/media/2021/09/iphone13cases-2048px-9994-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024);
+      }
+      #sneaker{
+        border-radius: 8px;
+background-image: url(https://nypost.com/wp-content/uploads/sites/2/2023/02/sneakers-new.jpg?quality=75&strip=all&w=744);
+      }
+      
+      #home2{
+        background-image: url(https://plus.unsplash.com/premium_photo-1661434758776-faf568a8a34f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRlY2h5fGVufDB8fDB8fHww&w=1000&q=80);
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      #home3{
+        background-image: url(https://image.slidesdocs.com/responsive-images/background/bank-card-credit-card-blue-powerpoint-background_7ca958fc07__960_540.jpg);
+        background-repeat: no-repeat;
+      background-size: cover;
+      }
+     .price{
+      padding-left: 4rem;
+     }
+     .wpp{
+      padding-left: 4rem;
+     }
+     .mspp{
+      padding-left: 4rem;
+     }
+     .cart {
+     
+      width: 1.75rem;
+      height: 1.75rem;
+      padding: .3rem;
+      border-radius: .2rem;
+      position: relative;
+    }
+    .icon {
+        height: 100%;
+        width: 100%;
+    }
+    .counter {
+        
+        color: black;
+        height: 1.4rem;
+        width: 1.4rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: -25%;
+        right: -25%;
+    }
+      
+    </style>
+</head>
+<body>
+    <!-- navbar section -->
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          
+          </svg>
+          <span class="ml-3 text-xl">shopcart</span>
+        </a>
+        <nav class="md:ml-auto md:mr-auto sm:flex sm:flex-wrap items-center text-base justify-center">
+          <a class="mr-5 sm:block grid grid-cols-2 hover:bg-black  hover:text-white p-2 rounded-full">Categaries</a>
+          <a class="mr-5 sm:block grid grid-cols-2 hover:bg-black  hover:text-white p-2 rounded-full">deals</a>
+          <a class="mr-5 sm:block grid grid-cols-2  hover:bg-black  hover:text-white p-2 rounded-full">What's New</a>
+          <a class="mr-5 sm:block grid grid-cols-2  hover:bg-black  hover:text-white p-2 rounded-full">delievery</a>
+          <input type="text" id="name" name="name" placeholder="Search Product" class=" hidden sm:block px-2 py-1 border-black border border-2 rounded-lg focus:outline-none focus:ring focus:border-blue-300" required>
+        </nav>
+        <div class=" flex ">
+          
+             <img class="mt-6 sm:mt-0 flex-row " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63eb3dec9d6ee83660ebe1de_user.png">
+          <a href="login.html" class="flex-row mr-6 mt-6 sm:mt-0"> account</a>
+          
+           
+          <div class=" cart">
+            <img class="icon mt-6 sm:mt-0" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63eb3dec9b865e78d4ff6b8d_shopping-cart-add.png" alt="icon" />
+            <div class="counter mt-6 sm:mt-0">1</div>
+          </div>
+            
+            <p class="flex-row mr-12 mt-6 sm:mt-0"> cart</p>
+        </div>
+       
+      </div>
+    </header>
+    
+      <!-- homesection -->
+      <section class="bg-indigo-500 pt-40 pb-24 pl-24 " id="home" >
+      <p class="text-3xl sm:text-5xl md:text-7xl ">Shopping And</p>
+      <p class="text-3xl  sm:text-5xl md:text-7xl pt-3 sm:pt-6 "> Department Store.</p>
+      <p class=" text-md sm:text-lg md:text-xl mt-8  "> Shopping is a bit of relaxing hobby for me, which </p>
+      <p class=" text-md sm:text-lg md:text-xl mt-2 "> is sometimes  troubling for the bank balance.</p>
+      <button class="rounded-2xl bg-green-800  hover:bg-green-900 p-2 mt-8 text-white" > Learn More  </button>
+      </section>
+
+      <!-- categariessection -->
+      <section class="pl-24 pt-32">
+        <h3 class="text-3xl" > Shop Our Top Categaries</h3>
+        <div class="flex mt-8 text-white mb-12">
+          <a  class="flex-col sm:flex-row  mr-12 basis-1/2 mb-12 sm:mb-0  sm:flex-col md:basis-1/3   text-2xl  container bg-green-800 pb-48 px-12" id="furniture" href=""> furniture</a>
+          <a class="flex-col sm:flex-row mr-12 basis-1/2  mb-12 sm:mb-0  sm:flex-col  md:basis-1/3 text-2xl  container bg-green-800 pb-48 px-12" id="handbag" href="">Handbag</a>
+          <a class="flex-col sm:flex-row  mr-12 basis-1/2  mb-12 sm:mb-0  sm:flex-col  md:basis-1/3  text-2xl  container bg-green-800 pb-48 px-12" id="books" href="">Books</a>
+          <a class="flex-col sm:flex-row mr-12 basis-1/2  mb-12 sm:mb-0  sm:flex-col  md:basis-1/3 text-2xl  container bg-green-800 pb-48 px-12" id="tech" href="">Tech</a>
+          <a class="flex-col sm:flex-row mr-12 basis-1/2  mb-12 sm:mb-0  sm:flex-col  md:basis-1/3 text-2xl container bg-green-800 pb-48 px-12" id="sneaker" href="">Sneakers</a>
+        
+        </div>
+      </section>
+
+      <!-- bestdeals -->
+      <section class="pl-24 pt-20">
+        <h3 class="text-3xl " > Todays Best Deals For You!</h3>
+        <div class="flex  mr-8">
+        <div class="flex-row  mr-12 pt-6">
+        <img class="  bg-gray-100 rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e563db5507951bbfbe_homepad-mini-min.png">
+        <h6 class="pt-6 font-bold">HomePod mini<span class="pl-16 ">$239.00</span></h6>
+        <p>Table with air purifier, stained veneer/black</p>
+       </div>
+        <div class="flex-row mr-12 pt-6">
+        <img class="  bg-gray-100 rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e563db5537881bbfcf_instax%20mini%209-min.png">
+        <h6 class="pt-6 font-bold">HomePod mini<span class="pl-16 ">$239.00</span></h6>
+        <p>Table with air purifier, stained veneer/black</p>
+       </div>
+        <div class="flex-row mr-12 pt-6">
+        <img class="  bg-gray-100 rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e48b497e63cc46b800_base%20camp%20duffel%2002-min.png">
+        <h6 class="pt-6 font-bold">HomePod mini<span class="pl-16 ">$239.00</span></h6>
+        <p>Table with air purifier, stained veneer/black</p>
+       </div>
+        <div class="flex-row mr-12 pt-6">
+        <img class="  bg-gray-100 rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e7e006821d3b04db74_Tote%20Medium-min.png">
+        <h6 class="pt-6 font-bold">HomePod mini<span class="pl-16 ">$239.00</span></h6>
+        <p>Table with air purifier, stained veneer/black</p>
+       </div>
+        
+        
+       </div>
+      </section>
+      <!-- brands -->
+      <section class="pl-24 pt-20">
+        <h3 class="text-3xl " > choose by Brands</h3>
+        <div class="flex pt-12 ">
+          <div class="flex-col basis-1/4 md:basis-1/2  bg-gray-100 rounded-2xl py-3 mr-8 p-2 ">
+            <img class="flex-col" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e560afc2c49da53521_brand%20(3)-min.png">
+            <h6 class="flex-col" >Staples</h6>
+            <p class="flex-col" >Delievers with in 24 hours </p>
+          </div>
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e58b497e41aa46b801_brand%20(8)-min.png">
+            <h6>Sprouts</h6>
+            <p>Delievers with in 24 hours </p>
+          </div>
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2"> 
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e5eaf8533b0958cefe_brand%20(5)-min.png">
+            <h6>Grocery outlet</h6>
+            <p>Delievers with in 24 hours </p></div>
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e454ac2e9d497cb531_brand%20(6)-min.png">
+            <h6>Mollie stones</h6>
+            <p>Delievers with in 24 hours </p>
+          </div>
+        </div>
+        <div class="flex pt-12">
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4707380971125e685_brand%20(4)-min.png">
+            <h6>Sports Basement</h6>
+            <p>Delievers with in 24 hours </p>
+          </div>
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e460afc2193aa53511_brand%20(2)-min.png">
+            <h6>Container Store</h6>
+            <p>Delievers with in 24 hours </p>
+          </div>
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4c21faa5e03c209c5_brand%20(1)-min.png">
+            <h6>Target</h6>
+            <p>Delievers with in 24 hours </p>
+          </div>
+          <div class="flex-col basis-1/4 md:basis-1/2 bg-gray-100 rounded-2xl py-3 mr-8 p-2">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e51eb4ad92a3e75673_brand%20(7)-min.png">
+            <h6>Bevmo!</h6>
+            <p>Delievers with in 24 hours </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- sales -->
+      
+      <section class="pl-24 pt-20">
+        <h3 class="text-3xl" > Get Up To 70% Off</h3>
+        <div>
+          <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              
+              <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-yellow-100 p-6 rounded-lg">
+                    
+                    <h3 class="tracking-widest  text-2xl  title-font">save</h3>
+                    <h2 class=" text-gray-900 text-4xl  title-font mb-4">$100</h2>
+                    <p class="leading-relaxed text-base">Explore Our Furniture & Home Furnishing Range</p>
+                    <img class="h-40 rounded w-full object-cover object-center mt-6" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6cd367817e964f756_sofa-min.png" alt="content">
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-red-200 p-6 rounded-lg">
+                    
+                    <h3 class="tracking-widest  text-2xl  title-font">save</h3>
+                    <h2 class=" text-gray-900 text-4xl  title-font mb-4">$29</h2>
+                    <p class="leading-relaxed text-base">Explore Our Furniture & Home Furnishing Range</p>
+                    <img class="h-40 rounded w-full object-cover object-center mt-6" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4e006822af104db61_book-min.png" alt="content">
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-orange-200 p-6 rounded-lg">
+                    
+                    <h3 class="tracking-widest  text-2xl  title-font">save</h3>
+                    <h2 class=" text-gray-900 text-4xl  title-font mb-4">$67</h2>
+                    <p class="leading-relaxed text-base">Explore Our Furniture & Home Furnishing Range</p>
+                    <img class="h-40 rounded w-full object-cover object-center mt-6" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e61a7c20076aec5fe7_shirt-min.png" alt="content">
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-green-200 p-6 rounded-lg">
+                    
+                    <h3 class="tracking-widest  text-2xl  title-font">save</h3>
+                    <h2 class=" text-gray-900 text-4xl  title-font mb-4">$59</h2>
+                    <p class="leading-relaxed text-base">Explore Our Furniture & Home Furnishing Range</p>
+                    <img class="h-40 rounded w-full object-cover object-center mt-6" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e53f7127592743f6be_bug%20%26%20book-min.png" alt="content">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- popular products -->
+      <section class="pl-24">
+        <h3 class="text-3xl" > Weekly Popular Products</h3>
+        <div class="flex">
+          <div class="flex-row mr-6 mt-6 ">
+            <a href="headphone.html"><img class="bg-gray-100 p-3 rounded-2xl  " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e54b76914b262f2448_headphone-min.png">
+            <p class="font-bold mt-4">Gaming headphone<span class="wpp">$239.00</span></p>
+            <p class="pt-4">Organic Cotton, fairtrade certified</p></a>
+          </div>
+          <div class="flex-row mr-6 mt-6">
+            <img  class="bg-gray-100 p-3  rounded-2xl "  src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e48b497e63cc46b800_base%20camp%20duffel%2002-min.png">
+            <p class="font-bold mt-4 ">Gaming headphone<span class="wpp">$159.00</span></p>
+            <p class="pt-4">Organic Cotton, fairtrade certified</p>
+          </div>
+          <div class="flex-row mr-6 mt-6 ">
+            <img class="bg-gray-100 p-3  rounded-2xl " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e74b769109fd2f245a_tomford%20watch-min.png">
+            <p class="font-bold mt-4">Gaming headphone<span class="wpp">$39.00</span></p>
+            <p class="pt-4">Organic Cotton, fairtrade certified</p>
+          </div>
+          <div class="flex-row mr-6 mt-6 rounded-xl">
+            <img class="bg-gray-100 p-3 rounded-2xl "src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e5bc6a9ac192b3d597_cabin-min.png">
+            <p class="font-bold mt-4">Gaming headphone<span class="wpp">$239.00</span></p>
+            <p class="pt-4">Organic Cotton, fairtrade certified</p>
+          </div>
+          <div class="flex-row mr-6 mt-6 ">
+            <img class="bg-gray-100 p-3 rounded-2xl  " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e65cc936826acce6d9_pendleton%20water%20bottle-min.png">
+            <p class="font-bold mt-4">Gaming headphone<span class="wpp">$89.00</span></p>
+            <p class="pt-4">Organic Cotton, fairtrade certified</p>
+          </div>
+        </div>
+      </section>
+      <!-- home2 -->
+      <section class=" pl-24 mt-24 pt-64 pb-24 bg-indigo-500" id="home2">
+        <div class=" ml-18 mr-96 p-0">
+       <h2 class="text-5xl ">Get 5% Cash</h2>
+       <h2 class="text-5xl pt-3">Back On $200</h2>
+       <p class="text-2xl pt-8">Shopping is a bit of a relaxing hobby for</p>
+       <p class="text-2xl">me, which is sometimes troubling for the</p>
+       <p class="text-2xl">bank balance.</p>
+       <button class="rounded-2xl bg-green-800  hover:bg-green-900 p-2 mt-8 text-white" > Learn More  </button>
+       </div>
+      </section>
+      <!-- best deals -->
+      <section class="pl-24 pt-12 ">
+        <h3 class="text-3xl" >Todays Best deals for you!</h3>
+        <div>
+          <button class="border-2 mt-5 rounded-3xl py-2 px-3 mr-6  hover:bg-sky-700 hover:text-white">
+            Gadgets
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            Fashion
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            Toys
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            Education
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            Beauty
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            Fitness
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            Furniture
+          </button>
+          <button class="border-2 mt-5 rounded-3xl p-2 mr-6 hover:bg-sky-700 hover:text-white">
+            sneakers
+          </button>
+        </div>
+        <div class="flex mt-12">
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e68b497e229146b818_leptop%20sleeve-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <p class="pt-4">Table with air purifier, stained veneer/black</p>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4aed3c6720e446aa1_airpod%20max-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P> 
+            <p class="pt-4">Table with air purifier, stained veneer/black</p>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e55cc9361a8ecce6d4_flower%20leptop%20sleeve-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <p class="pt-4">Table with air purifier, stained veneer/black</p>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e78b497e3a5646b82f_water%20pot-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <p class="pt-4">Table with air purifier, stained veneer/black</p>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+        </div>
+        <div class="flex mt-12">
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e563db5560c31bbfce_leptop%20sleeve%20macbook-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <p class="pt-4">Organic Cotton, fairtrade certified</p>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e61eb4ad4af6e75689_macbook%2013-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <P class="pt-4">256, 8 core GPU, 8 GB</P>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+          <div class="flex-row mr-8">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e563db5507951bbfbe_homepad-mini-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <P class="pt-4"> 5 Colors Available</P>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+          <div class="flex-row mr-full">
+            <img class="bg-gray-100 rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e64bd907adafd35b46_ipad%20mini-min.png">
+            <P class="font-bold mt-5 ">AirPods Max <span class="price">$559.00</span></P>
+            <p class="pt-4">Table with air purifier, stained veneer/black</p>
+            <button class="rounded-full text-black hover:bg-black py-2 px-3 mt-8 border-2 border-solid hover:text-white" > Add to cart </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- home3 -->
+      
+      <section class=" pl-24 mt-24 pt-64 pb-24 bg-indigo-500" id="home3">
+        <div class=" ml-18 mr-96 p-0">
+       <h2 class="text-5xl ">Get 5% Cash Back</h2>
+       <h2 class="text-xl pt-3">on Shopcart.com</h2>
+       
+       <button class="rounded-2xl bg-green-800 hover:bg-green-900 p-2 mt-8 text-white" > Learn More  </button>
+       </div>
+      </section>
+
+      <!-- most selling products -->
+      <section class="pl-24 pt-12 ">
+        <h3 class="text-3xl" >Most Sellings product</h3>
+        <div class="flex mt-6">
+          <div class="flex-row mx-10 ">
+            <img class="bg-gray-100  rounded-xl " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6eaf85336ce58cf03_instax%20mini%2011-min.png">
+           <p class="mt-6 font-bold">Hand Watch<span class="mspp">$100.00</span></p>
+           <p class="mt-5">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="flex-row mx-10 ">
+            <img class="bg-gray-100  rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e74b76916e072f2466_watch-min.png">
+           <p class="mt-6 font-bold">Hand Watch<span class="mspp">$100.00</span></p>
+           <p class="mt-5">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="flex-row mx-10 ">
+            <img class="bg-gray-100 rounded-xl " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4037f3ba53bcf2021_adidas%20sneakers-min.png">
+           <p class="mt-6 font-bold">Hand Watch<span class="mspp">$100.00</span></p>
+           <p class="mt-5">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="flex-row mx-10 ">
+            <img class="bg-gray-100  rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e65cc936826acce6d9_pendleton%20water%20bottle-min.png">
+           <p class="mt-6 font-bold">Hand Watch<span class="mspp">$100.00</span></p>
+           <p class="mt-5">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          
+        </div>
+        </section>
+
+
+<!-- treding products -->
+<section class="pl-24 pt-12 ">
+  <h3 class="text-3xl" >Trending product for you</h3>
+  <div class="flex">
+  <div class="flex-row mr-12 bg-gray-100 py-8 px-4 rounded-2xl mt-6">
+    <img  class="rounded-lg " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6cd3678e82164f755_furniture%20village-min.png">
+    <p class="text-2xl pt-6">Furniture Village</p>
+    <p class="text-md"> delivery with in 24 hours</p>
+    <button class="rounded-full bg-black py-2 px-3  mt-8 text-white" > shop Now  </button>
+  </div>
+  <div class="flex-row bg-gray-100 py-8 px-4 rounded-2xl mt-6">
+  <img class="rounded-lg " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6037f3b456acf2024_Fashion%20world-min.png">
+  <p class="text-4xl pt-6">Fashion World</p>
+  <p class="text-md"> delivery with in 24 hours</p>
+    <button class="rounded-full bg-black py-2 px-3 mt-8 text-white" > shop Now  </button>
+  </div>
+</div>
+  </section>
+  
+  <!-- best selling products -->
+  <section class="pl-24 pt-12 ">
+    <h3 class="text-3xl" >Best Selling Product</h3>
+    <div class="flex mt-12">
+      <div class="mr-12" class="flex-row">
+        <img class="rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e62d65536b6a75698f_store%20one-min.png">
+        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2d253f08a89912d90709_Ellipse%20287.png">
+     <h6 class="mt-3 text-xl ">Staples</h6>
+     <p class="mt-3 text-gray-500 text-sm">Bag&#8226;perfume</p>
+     <div class="flex mt-5">
+      <img class="flex-row mr-2 " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2eeefd8efb290e2d7d78_Icon.png">
+      <span class="flex-row text-red-600">delievery with in 24 hours</span>
+      </div>
+      </div>
+      <div class="mr-12" class="flex-row">
+        <img class="rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e74bd907803dd35b4f_store%20two-min.png">
+        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2d253a093c1dea9a21c7_Ellipse%20287-1.png">
+     <h6 class="mt-3 text-xl ">Now Delivery</h6>
+     <p class="mt-3 text-gray-500 text-sm">Bag&#8226;perfume</p>
+     <div class="flex mt-5">
+      <img class="flex-row mr-2 " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2eeefd8efb290e2d7d78_Icon.png">
+      <span class="flex-row text-red-600">delievery with in 24 hours</span>
+      </div>
+      </div>
+      <div class="mr-12" class="flex-row">
+        <img class="rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e668e3265021e48a0b_store%20three-min.png">
+        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2d25fbba384ffd156e76_Ellipse%20287-2.png">
+     <h6 class="mt-3 text-xl ">Bevmo</h6>
+     <p class="mt-3 text-gray-500 text-sm">Bag&#8226;perfume</p>
+     <div class="flex mt-5">
+      <img class="flex-row mr-2 " src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2eeefd8efb290e2d7d78_Icon.png">
+      <span class="flex-row text-red-600">delievery with in 24 hours</span>
+      </div>
+      </div>
+      <div class="mr-12" class="flex-row ">
+        <img class="rounded-2xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6eaf8537c8058cf04_store%20four-min.png">
+        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2d25dddbd27c9eda91b5_Ellipse%20287-3.png">
+     <h6 class="mt-3 text-xl ">Quicklly</h6>
+     <p class="mt-3 text-gray-500 text-sm">Bag&#8226;perfume</p>
+     <div class="flex mt-5">
+     <img class="flex-row mr-2 "  src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63ea2eeefd8efb290e2d7d78_Icon.png">
+     <span class="flex-row text-red-600">delievery with in 24 hours</span>
+     </div>
+      </div>
+    </div>
+   
+  </section> 
+  
+  
+
+  <!-- service for help -->
+<section class="pl-24 pt-12 mt-12">
+    <h3 class="text-3xl" >Services To Help You Shop</h3>
+    <div class="flex  mt-12"> 
+      <div class="flex-row mr-12  bg-gray-100 p-6  rounded-xl"> 
+        <h5 class="text-3xl font-bold bg-gray-100">Frequently Asked  </h5>
+        <h5 class="text-3xl font-bold bg-gray-100">Questions</h5>
+        <p class="pt-6">Updates on safe Shopping in </p>
+        <P class="pb-12">our Stores</P>
+        <img class="rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e55b939fea169c0292_faq-min.png">
+      </div>
+      <div class="flex-row mr-12 bg-gray-100 p-6 rounded-xl">
+        <h5 class="text-3xl font-bold bg-gray-100"> Online Payment </h5>
+        <h5 class="text-3xl font-bold bg-gray-100">Process </h5>
+        <p class="pt-6">Updates on safe Shopping in </p>
+        <P class="pb-12">our Stores</P>
+        <img class="rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6707380718425e697_onlie%20payment-min.png">
+      </div>
+      <div class="flex-row  mr-12 bg-gray-100 p-6 rounded-xl">
+        <h5 class="text-3xl font-bold bg-gray-100"> Home Delivery  </h5>
+        <h5 class="text-3xl font-bold bg-gray-100">Options</h5>
+        <p class="pt-6">Updates on safe Shopping in </p>
+        <P class="pb-12">our Stores</P>
+        <img class="rounded-xl" src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e544663ba3d0fd2bb8_home%20delivery-min.png">
+      </div>
+    </div>
+  </section>
+
+      <!-- footer -->
+      <hr class="mt-10">
+      <footer class="text-gray-600 body-font pl-20" >
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+             
+              <span class="ml-3 text-4xl">Shopcart</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </footer>
+      
+      
+</body>
+<script src="https://cdn.tailwindcss.com">
+</script>
+</html>
